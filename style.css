@@ -62,6 +62,27 @@ h4.event-subheading {
   text-decoration: underline;
 }
 
+.bulleted-list{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.country-list > li{
+  margin-bottom: 5px;
+}
+
+.organizers{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.organizers__item{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  flex-basis: 45%;
+}
+
 @media only screen and (min-width: 700px) {
   h1,
   h2 {
