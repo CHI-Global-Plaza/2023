@@ -71,10 +71,9 @@ a {
   transition: all ease-in-out 300ms;
 }
 
-a:hover{
+a:hover {
   color: #009e92;
 }
-
 
 button {
   border: none;
@@ -109,5 +108,23 @@ h4 {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+@media only screen and (max-width: 699px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
   }
 }

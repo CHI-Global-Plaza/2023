@@ -80,6 +80,10 @@ h4.event-subheading {
   color: #ffbe44;
 }
 
+.event-details__item > p {
+  word-wrap: break-word;
+}
+
 .organizers {
   display: flex;
   flex-wrap: wrap;
@@ -92,7 +96,7 @@ h4.event-subheading {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-basis: 45%;
+  flex-basis: 100%;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -114,16 +118,32 @@ h4.event-subheading {
   display: none;
 }
 
+.event-details h2 {
+  margin: 2rem auto 1rem;
+}
+
 @media only screen and (min-width: 700px) {
   h1,
   h2 {
     margin: 6rem auto 3rem;
   }
-  .event-details h2 {
-    margin: 2rem auto 1rem;
-  }
 
   .nav-items {
     display: block;
+  }
+  .organizers__item {
+    flex-basis: 45%;
+  }
+}
+
+@media only screen and (max-width: 699px) {
+  .nav-logo__plaza-logo {
+    width: 50%;
+  }
+  .event-title {
+    font-size: 2rem;
+  }
+  h4.event-subheading {
+    font-size: 1rem;
   }
 }
